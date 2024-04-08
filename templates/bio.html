@@ -1,0 +1,169 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<main>
+    <nav>
+        <div id="mainprofile">
+            <h1>Hello, My Name Is Mary Jane Opara</h1>
+            <img src="../static/img/maryprofile.PNG" alt="">
+            <ul id="icons">
+                <li><i class="fab fa-facebook"></i></li>
+                <li><i class="fab fa-whatsapp"></i></li>
+                <li><i class="fab fa-instagram"></i></li>
+                <li><i class="fab fa-twitter"></i></li>
+            </ul>
+        </div>
+    </nav><hr>
+    <div id="mainone">
+        <h2>About Me</h2>
+        <p>Hey there, lovely souls! It's your girl, MaryJane Opara, diving into the heart of what makes my blogging journey so special. Buckle up, because we're about to take a trip through the world of consistency, dedication, and making a difference, one blog post at a time.
+
+            Let's talk consistency. When it comes to my blogs, consistency isn't just a buzzword—it's a way of life. Rain or shine, busy days or slow ones, you can bet your bottom dollar that I'll be right here, pouring my heart and soul into every word I write. Because that's what being a content creator is all about, right? Showing up, day in and day out, and giving it your all. And trust me, I'm all in.
+            
+            But consistency is just the tip of the iceberg. Dedication? Now, that's where the magic happens. You see, I'm not just churning out content for the sake of it. Every blog post, every word, is crafted with care, passion, and purpose. Whether I'm exploring the latest trends, sharing personal anecdotes, or delving into societal issues, I'm always striving to provide value to my readers. Because at the end of the day, that's what matters most—making a real connection and leaving a lasting impact.
+            
+            Now, let's talk about why I do what I do. Sure, blogging is a blast, but for me, it's so much more than that. It's about using my platform to shine a light on important issues, raise awareness about causes near and dear to my heart, and spark meaningful conversations that have the power to drive real change. Because let's face it—there's a lot going on in the world, and sometimes, all it takes is a little blog post to make a big difference.
+            
+            And you know what? It's working. With each passing day, my reach grows, my influence expands, and my voice gets a little bit louder. And while fame and fortune are nice and all, what truly matters is the impact I'm making on the world around me. Because at the end of the day, isn't that what we're all striving for? To leave this world a little better than we found it?
+            
+            So here's to consistency, dedication, and making a difference—one blog post at a time. Thanks for joining me on this wild ride, fam. Together, we're gonna change the world. Watch out, 'cause MaryJane Opara is here to stay. Peace, love, and happy blogging, y'all. ✌️❤️📝
+            </p>
+    </div><hr>
+
+    <div id="maintwotwo">
+        <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+    </div>
+    <div id="schoolpart">
+        <h2>EDUCATION</h2>
+    </div><hr>
+    <div id="maintwo">
+        <h2>Details</h2>
+        <form action="">
+            <li>
+                <label for="">NAME: </label><br>
+            </li>
+            <li>
+                <label for="">MAT NO: </label><br>
+            </li>
+            <li>
+                <label for="">DEPARTMENT: </label><br>
+            </li>
+            <li>
+                <label for="">FACULTY: </label><br>
+            </li>
+            <li>
+                <label for="">COURSE: </label><br>
+            </li>
+            <li>
+                <label for="">DATE</label><br>
+            </li>
+        </form>
+    </div>
+</main>
+
+<style>
+    #mainprofile {
+        padding: 20px;
+        text-align: center;
+    }
+    #mainprofile img {
+        width: 20%;
+        clip-path: circle();
+    }
+    #icons {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding: 0;
+    }
+    #icons li {
+        list-style: none;
+    }
+    #icons i {
+        font-size: 170%;
+    }
+    #icons i:hover {
+        background-color: black;
+        color: white;
+        padding: 10px;
+        border-radius: 50%;
+    }
+
+    #mainone {
+        padding: 10px;
+        font-weight: bolder;
+    }
+
+    #maintwo {
+        padding: 10px;
+    }
+    #maintwo form li {
+        padding: 10px 5px 10px 5px;
+    }
+
+    #maintwotwo {
+        text-align: center;
+    }
+    #maintwotwo i {
+        font-size: 280%;
+    }
+    #schoolpart {
+        text-align: center;
+    }
+
+    
+/* Media query for Samsung Galaxy S9+ */
+/* CSS styles specific to Samsung Galaxy S9+ */
+@media only screen and (max-width: 658px) and (min-width: 320px) {
+}
+
+/* Media query for Samsung Galaxy S8 */
+/* CSS styles specific to Samsung Galaxy S8 */
+@media only screen and (max-width: 740px) and (min-width: 360px) {
+}
+
+/* Media query for Samsung Galaxy tab */
+/* CSS styles specific to Samsung Galaxy tab */
+@media only screen and (max-width: 1138px) and (min-width: 712px) {
+}
+
+/* Media query for Samsung Galaxy s20 ultra */
+/* CSS styles specific to Samsung Galaxy s20 ultra */
+@media only screen and (max-width: 915px) and (min-width: 412px) {
+}
+
+/* Media query for iPhone 6/7/8 */
+/* CSS styles specific to iPhone 6/7/8 */
+@media only screen and (max-width: 667px) and (min-width: 414px) {
+}
+
+/* Media query for ALL laptops */
+/* CSS styles specific All laptops */
+@media only screen and (max-width: 1920px) and (min-width: 1366px){
+}
+
+/* Media query for HP CORE I5 6/7/8 */
+/* CSS styles specific to HP CORE I5 6/7/8 */
+@media only screen and (max-width: 1600px) and (min-width: 900px){
+} 
+
+/* Media query for samsung galaxy ao3s and a10 */
+/* CSS styles specific to samsung galaxy ao3s and a10 */
+@media only screen and (max-width: 720px) and (min-width: 320px) {
+    #icons li {
+        list-style: none;
+    }
+    #icons i {
+        font-size: 100%;
+    }
+    #mainprofile img {
+        width: 70%;
+    }
+}
+
+
+</style>
+
+{% endblock %}

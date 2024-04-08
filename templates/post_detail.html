@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ post.topic }}</title>
+</head>
+<body>
+
+    <h1>{{ post.topic }}</h1>
+    <p>{{ post.content }}</p>
+    {% if post.picture %}
+    <img src="{{ post.picture.url }}" alt="Picture">
+    {% endif %}
+    {% if post.video %}
+    <video controls>
+        <source src="{{ post.video.url }}" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    {% endif %}
+    <p>{{ post.date }}</p>
+
+</body>
+
+<style>
+    body {
+        background-color: #000;
+        color: white;
+    }
+    h1 {
+        text-align: center;
+        text-decoration: underline;
+    }
+    video {
+        width: 60%;
+        border-radius: 15px;
+    }
+    img {
+        width: 60%;
+        border-radius: 10px;
+    }
+    p {
+        text-align: left;
+    }
+</style>
+</html>
